@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<bgcolor="red">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register!</title>
+
+    <link rel="stylesheet" href="Form.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <h1><bgcolor="red">Registration now </h1>
+      <hr />
+      <div id="form">
+        <form action="">
+          <div id="firstName">
+            <input type="text" placeholder="First name" size="10" color ="red" />
+          </div>
+
+          <div id="lastName">
+            <input type="text" placeholder="Last name" size="10" />
+          </div>
+
+          <div id="contact">
+            <input
+              type="email"
+              placeholder="Mobile number or Email Address"
+              size="25"
+            />
+          </div>
+
+          <div id="contact">
+            <input type="password" placeholder="New Password" size="25" />
+          </div>
+
+          <label id="whyDob" for="whyDOB">Date of birth</label>
+         
+          <br />
+          <select name="year" id="dobYear">
+            <option>year</option>
+            <script>
+              var year;
+              for (year = 2020; year >= 1990; year--)
+                document.write("<option>" + year + "</option>");
+            </script>
+          </select>
+
+          <select name="month" id="dobMonth">
+            <option>month</option>
+            <script>
+              var month;
+              for (month = 1; month <= 12; month++)
+                document.write("<option>" + month + "</option>");
+            </script>
+          </select>
+
+          <select name="date" id="dobDate">
+            <option>day</option>
+            <script>
+              var day;
+              for (day = 1; day <= 31; day++)
+                document.write("<option>" + day + "</option>");
+            </script>
+          </select>
+
+          <br />
+          <label id="whyGender" for="whyGender">Gender</label>
+         
+          <br />
+
+          <div class="radioForGender">
+            Male<input type="radio" name="gender" size="10" bgcolor="red" />
+          </div>
+          <div class="radioForGender">
+            Female<input type="radio" name="gender" />
+          </div>
+          <div class="radioForGender">
+            Custom<input type="radio" name="gender" />
+          </div>
+          <div id="terms">
+            By clicking Sign Up, 
+          </div>
+
+          <button id="button" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+  
